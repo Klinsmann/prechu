@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/grid2.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Prechu</title>
+</head>
+<body>
+	<header class="container_12">
+		<div class="prefix_1 grid_5 logo"></div>
+		<nav class="suffix_1 grid_5">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="clear"></div>
+		<div class="grid_12 galeria" id="slides">
+			<img src="images/gal_pic_1.png" alt="">
+			<img src="images/gal_pic_2.png" alt="">
+		</div>
+	</header>
+	<div class="clear"></div>
+	<section class="container_12 content">
+		<div class="grid_4">
+			
+			<div class="points">
+				<div id="p1"></div>
+				<h2>Contrary to popular</h2>
+				<p>Lorem Ipsum is not simply random text. It has roots in a piece </p>
+			</div>
+		</div>
+		<div class="grid_4">
+			<div class="points">
+				<div id="p2"></div>
+				<h2>Contrary to popular</h2>
+				<p>Lorem Ipsum is not simply random text. It has roots in a piece </p>
+			</div>
+		</div>
+		<div class="grid_4">
+			<div class="points">
+				<div id="p3"></div>
+				<h2>Contrary to popular</h2>
+				<p>Lorem Ipsum is not simply random text. It has roots in a piece </p>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="prefooter">
+		 <div class="prefix_2 grid_4">
+		 	<h1>The Shopping cart</h1>
+		 	<div id="shop"></div>
+		 </div>
+		 <div class="grid_4 suffix_2">
+		 	<h3>Some Bullet text here</h3>
+		 	<p>Lorem Ipsum is simply dummy text of the printing and typesetting 
+				Lorem Ipsum has been the industry's standard dummy text ever 
+				When an unknown printer took a galley of type and scrambled 
+				It to make a type specimen book. It has survived not only five centuries
+				But also the leap into electronic typesetting,
+				Remaining essentially unchanged. It was popularised 
+				The release of Letraset sheets containing Lorem Ipsum passages</p>
+		 </div>
+	</div><!-- fin del div prefooter -->
+		 <div class="clear"></div>
+		 <footer class="prefix_4 grid_4 suffix_4">
+		 	<p>Copyright ©2013 - Maquetado Por @<a href="http://twitter.com/klinsmannf">Klinsmann</a></p>
+		 </footer>
+	</section>
+
+	<!-- SlidesJS Required: Link to jQuery -->
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Link to jquery.slides.js -->
+  <script src="js/jquery.slides.js"></script>
+  <!-- End SlidesJS Required -->
+
+  <!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          active: true,
+          auto: true,
+          interval: 400000000,
+          swap: true
+        }
+      });
+    });
+  </script>
+</body>
+</html>
